@@ -1,0 +1,25 @@
+.article-accordion {
+  margin-bottom: 16px;
+  transition: border-color 0.3s ease;
+
+  &.odd {
+    background-color: black;
+    color: white;
+  }
+
+  &.even {
+    background-color: blue;
+    color: white;
+  }
+
+  &:hover {
+    border: 2px solid red;
+  }
+
+  .article-content {
+    &::first-letter {
+      font-size: 2em;
+      color: red;
+    }
+  }
+}
